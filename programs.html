@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<base target="_parent">
+
+	<script type="text/javascript" src="programs.js"></script>
+	<style>
+		.dropdown-menu .dropdown-toggle:after {
+			border-top: .3em solid transparent;
+			border-right: 0;
+			border-bottom: .3em solid transparent;
+			border-left: .3em solid;
+		}
+		.dropdown-menu .dropdown-menu {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.dropdown-menu li {
+			position: relative;
+		}
+		.nav-item .submenu {
+			display: none;
+			position: absolute;
+			left: 100%;
+			top: -7px;
+		}
+		.nav-item .submenu-left {
+			right: 100%;
+			left: auto;
+		}
+		.dropdown-menu > li:hover {
+			background-color: #f1f1f1
+		}
+		.dropdown-menu > li:hover > .submenu {
+			display: block;
+		}
+
+		@media only screen and (max-device-width: 991px) {
+			.active {
+                display: block;
+            }
+			
+			.navbar-nav li li .parent {
+                background-repeat: no-repeat;
+                background-position: 95% 50%;
+            }
+			
+            .navbar-nav ul:hover {
+                display: block;
+            }
+			
+			.navbar-nav > li.hover > ul {
+            left: 0;
+			}
+			
+			.navbar-nav li li.hover ul {
+				left: 100%;
+				top: 0;
+			}
+
+            .navbar-nav > li.hover > ul,
+            .navbar-nav li li.hover ul {
+                position: relative;
+            }
+		}	
+	</style>
+</head>
+
+<body onLoad="main()">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<a class="navbar-brand" href="https://www.apeximagingservices.com/about"> <span style="color:white; font-weight: bold;">Program Reports</span></a>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto" id="navigation">
+				
+			</ul>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row jumbotron">
+			<div class="col-sm6 mx-auto">
+				<a href="https://www.apeximagingservices.com/about"> <img src="https://apeximaging.quickbase.com/up/bnkd9jwxs/g/rb6/eg/va/AVLogoWhiteTransparent.png" style="width:auto;"> </a>
+			</div>
+		</div>
+		<div id = "missing">
+			
+		</div>
+	</div>
+</body>
+</html>
